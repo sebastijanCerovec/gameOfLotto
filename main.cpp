@@ -90,7 +90,7 @@ int checkHits(int numbersDrawn[], int numbersPicked[], bool numbersHit[]) {
 
 // a function that writes out the players selection of numbers
 void writeOutPick(int numbersPicked[]) {
-	std::cout << std::endl << std::endl << "YOUR LOTTO 6/42 PICK: ";
+	std::cout << std::endl << std::endl << "YOUR LOTTO " << DRAW << "/" << POOL_OF_NUMBERS << " PICK: ";
 	std::cout << "|";
 	for (int i = 0; i < DRAW; i++)
 	{
@@ -117,7 +117,7 @@ void createDrawingEffect(int numbersDrawn[]) {
 
 // a function that writes out the lotto draw
 void writeOutDraw(int numbersDrawn[]) {
-	std::cout << std::endl << std::endl << "LOTTO 6/42 DRAW: ";
+	std::cout << std::endl << std::endl << "LOTTO " << DRAW << "/" << POOL_OF_NUMBERS << " DRAW: ";
 	std::cout << "|";
 	for (int i = 0; i < DRAW; i++)
 	{
@@ -144,7 +144,7 @@ void writeOutNumberOfHits(int counter) {
 
 // a function that writes out the players selection of numbers highlighting hit numbers
 void writeOutHits(int numbersPicked[], bool numbersHit[]) {
-	std::cout << "YOUR LOTTO 6/42 PICK: ";
+	std::cout << std::endl << std::endl << "YOUR LOTTO " << DRAW << "/" << POOL_OF_NUMBERS << " PICK: ";
 	std::cout << "|";
 	for (int i = 0; i < DRAW; i++)
 	{
