@@ -3,7 +3,6 @@
 const int DRAW = 6;
 const int POOL_OF_NUMBERS = 42;
 
-// a comment
 // a function that generates a number that is within the scope of the pool of lotto numbers
 int generateLottoNumber() {
 	return rand() % POOL_OF_NUMBERS + 1;
